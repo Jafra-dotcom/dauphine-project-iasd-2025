@@ -1,15 +1,13 @@
 """Main module for the TelecomPlus multi-agent support system."""
 
 
-def answer(question: str) -> str:
-    """Answer customer questions using RAG and SQL agents.
-    You can change me or use another function.
-    I am just here to make the streamlit app work.
+from tools.pdf_retriever import PDFRetriever
 
-    Args:
-        question: Customer question in French
+if __name__ == "__main__":
+    retriever = PDFRetriever()
+    results = retriever.search("Quels modes de paiement acceptez-vous ?")
 
-    Returns:
-        Answer string
-    """
-    return "Hello student, edit me please"
+    for r in results:
+        print(r.page_content[:300])
+        print("-" * 50)
+
