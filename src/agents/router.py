@@ -1,19 +1,18 @@
-import os
-from langchain_community.chat_models import ChatOpenAI
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.output_parsers import StrOutputParser
-
-
 class RouterAgent:
-    def __init__(self):
-        pass
-
     def route(self, question: str) -> str:
-        question = question.lower()
+        q = question.lower()
 
-        if any(word in question for word in ["paiement", "offre", "résiliation", "condition"]):
+        if any(w in q for w in [
+            "paiement", "facture", "forfait", "abonnement",
+            "résiliation", "roaming", "support"
+        ]):
             return "PDF"
-        elif any(word in question for word in ["facture", "consommation", "client"]):
+
+        if any(w in q for w in [
+            "combien", "nombre", "total", "clients",
+            "consommation", "tickets", "abonnements"
+        ]):
             return "DATA"
-        else:
-            return "GENERAL"
+
+        return "WEB"
+
