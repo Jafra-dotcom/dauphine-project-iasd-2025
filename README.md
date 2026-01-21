@@ -1,196 +1,208 @@
 # Dauphine Generative AI Project 2025 - 2026
+**Université Paris Dauphine - IASD 2025-2026**
+# 📡 TelecomPlus – Système Multi-Agents RAG
 
-Projet de Support Client (Multi)-Agent pour Entreprise Téléphonique
+## 🎯 Objectif du projet
 
-## 📋 Description du Projet
+Ce projet implémente un **système agentique multi-agents** capable de répondre automatiquement à des questions clients dans le contexte d’un opérateur télécom fictif (*TelecomPlus*).
 
-Système Agentique pour un service client téléphonique fictif **TelecomPlus**. Le système doit répondre aux questions clients en utilisant des documents PDF (FAQ) et des données SQL/XLSX (base de données clients).
+Le système traite des questions liées :
 
-## 📊 Tables de Données
+* aux **smartphones** (catalogue, prix)
+* aux **forfaits et abonnements**
+* à la **facturation et au paiement**
+* au **roaming international**
+* aux **données clients** (consommation, factures)
 
-Le projet contient **6 tables Excel** dans `data/` :
-
-| Table | Description |
-|-------|-------------|
-| **clients.xlsx** | Informations clients (nom, prénom, email, téléphone, adresse) |
-| **forfaits.xlsx** | Forfaits disponibles (nom, data mensuelle, prix, durée engagement) |
-| **abonnements.xlsx** | Abonnements actifs des clients (forfait, dates, statut engagement) |
-| **consommation.xlsx** | Consommation mensuelle (data utilisée, minutes, SMS) |
-| **factures.xlsx** | Factures clients (montant, statut paiement, échéances) |
-| **tickets_support.xlsx** | Tickets de support technique (catégorie, statut, priorité) |
-
-**Documents PDF** (7 fichiers dans `data/pdfs/`) :
-- FAQ_Facturation_et_Paiements.pdf
-- FAQ_Forfaits_et_Abonnements.pdf
-- FAQ_Support_Technique.pdf
-- FAQ_Roaming_International.pdf
-- FAQ_Compte_Client.pdf
-- FAQ_Resiliation_et_Modifications.pdf
-- FAQ_Catalogue_Telephones.pdf
-
-## 🔧 Installation et Configuration
-
-### 1. Cloner le Projet
-
-Commencez par cloner le projet sur votre ordinateur :
-
-```bash
-git clone https://github.com/BastinFlorian/dauphine-project-iasd-2025
-cd dauphine-project-iasd-2025
-```
-
-### 2. Créer une Branche de Développement
-
-**Important** : Ne travaillez pas directement sur la branche `main`. Créez votre propre branche :
-
-```bash
-# Créer et basculer sur une nouvelle branche
-git checkout -b FEATURE/description-de-votre-travail
-
-# Exemple :
-git checkout -b FEATURE/multi-agent-rag-system
-```
-
-### 3. Workflow Git
-
-Pendant votre développement, utilisez ce workflow :
-
-```bash
-# Voir l'état de vos modifications
-git status
-
-# Ajouter vos fichiers modifiés
-git add .
-# Ou ajouter des fichiers spécifiques
-git add src/main.py evaluate.py
-
-# Créer un commit avec un message descriptif
-git commit -m "feat: implement RAG agent with PDF indexing"
-
-# Pousser votre branche sur GitHub
-git push origin FEATURE/description-de-votre-travail
-```
-
-**Bonnes pratiques Git** :
-- Faites des commits réguliers avec des messages clairs
-- Utilisez des messages conventionnels (feat, fix, docs, refactor, etc.)
-- Poussez régulièrement votre code pour éviter de perdre votre travail
-- Créer des Pull Request et merger le code sur main ensuite, uniquement après validation de votre binôme
-
-## 🚀 Lancer l'Application
-
-Pour vous simplifier la démonstration, une interface a été crée.
-
-Pour la lancer sur votre ordinateur, après avoir créé un environnement virtuel, éxécutez les commandes suivantes:
-
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
-L'interface Streamlit s'ouvrira dans votre navigateur.
-Pour l'instant, une réponse basique est donnée.
-Votre travail est d'améliorer la réponse afin de la rendre pertinente pour le cas d'usage en question.
-
-### Exemple:
-Par exemple, voici les réponses attendues pour deux questions distinctes:
-
-**Q. Quels modes de paiement acceptez-vous ?**
-
-R. Nous acceptons les paiements par carte bancaire, prélèvement automatique, virement bancaire et PayPal. Le prélèvement automatique garantit de ne jamais manquer une échéance.
-
-**Q. Y a-t-il des frais de résiliation si je suis engagé ?**
-
-R. Si vous êtes encore en période d'engagement, des frais égaux au montant des mensualités restantes peuvent s'appliquer. Si vous êtes hors engagement (après 12 ou 24 mois), la résiliation est gratuite.
-
-Pour evaluer votre agent, il faudra modifier le script d'évaluation (créé par défaut):
-
-```python
-python evaluate.py
-```
-
-## 🎯 Travail à Réaliser
-
-### 1. Créer un Agent IA
-
-Développez un système capable de répondre aux questions clients à paartir de différentes données :
-- **RAG** : Recherche dans les documents PDF
-- **SQL ou PandaDataframeTool** : Requêtes sur les tables de données
-- **Orchestration** : Coordination des agents selon la question
-
-Vous pouvez vous inspirer de l'architecture de dossier [suivante](https://docs.langchain.com/oss/python/langgraph/application-structure) pour construire votre solution
-
-### 2. Créer un Script d'Évaluation
-
-Créez `evaluate.py` pour évaluer votre système :
-- Charger les questions depuis `data/evaluation_questions.xlsx` (25 questions)
-- Exécuter votre agent sur chaque question
-- Comparer les réponses générées aux réponses attendues
-- Calculer un score (utilisez un LLM-as-a-judge pour l'évaluation)
-
-### 3. Documenter votre Travail
-
-Le README.md de votre projet doit détailler :
-- Architecture de votre système agentique
-- Choix techniques et justifications
-- Instructions d'installation et d'exécution
-- Résultats d'évaluation obtenus
-
-## 📝 Modalités de Rendu
-
-### Deadline
-**14 décembre 2025 - 23h59**
-
-### Format de Rendu
-- Code hébergé sur **GitHub**
-- Lien du repository à envoyer avant la deadline
-
-### Soutenance
-
-**Format** :
-- **Pas de slides ou présentation PowerPoint demandée**
-- Démonstration en direct sur votre ordinateur (vérifier que vous n'avez pas de problème pour partager votre écran lors d'une réunion Teams)
-- Questions/réponses sur le code et les choix d'architecture
-
-**Déroulement** (environ 15 minutes) :
-1. **Démonstration**: Montrer l'application fonctionnelle
-2. **Questions du professeur** : Tester votre Agent IA avec de nouvelles questions
-3. **Outil de monitoring**: Présenter les traces et métriques (Langfuse/Langsmith/MLflow)
-4. **Discussion technique** : Expliquer les choix d'implémentation
-
-## 📊 Critères d'Évaluation
-
-### 1. Performance et Pertinence (30%)
-- **Dataset d'entraînement** : Qualité des réponses sur les 25 questions d'évaluation
-- **Généralisation** : Capacité à répondre à des questions inconnues posées lors de la soutenance
-- **Précision** : Justesse des informations extraites (documents PDF et données SQL)
-
-### 2. Qualité du Code et Bonnes Pratiques (30%)
-- **Clarté et documentation** : Code lisible, commenté, avec docstrings
-- **Structure du projet** : Organisation logique des fichiers et modules
-- **Prompts** : Qualité et précision des prompts utilisés
-- **Évaluation** : Script `evaluate.py` fonctionnel avec métriques pertinentes
-
-### 3. Architecture Agentique (25%)
-- **Complexité** : Sophistication de l'approche choisie (simple agent vs multi-agent)
-- **Justification** : Pertinence des choix techniques (RAG, SQL, orchestration)
-- **Efficacité** : Performance et temps de réponse du système
-
-### 4. Monitoring et Auditabilité (15%)
-- **Traçabilité** : Utilisation d'un outil de monitoring (Langfuse, Langsmith, ou MLflow)
-- **Métriques** : Suivi des appels LLM, coûts, latences, erreurs
-- **Démonstrabilité** : Capacité à montrer les traces lors de la soutenance
-
-### Bonus : Simplicité
-- Solutions élégantes et minimalistes seront valorisées
-- Éviter la complexité inutile (over-engineering)
+Il repose sur une architecture **RAG (Retrieval-Augmented Generation)** combinée à un **router d’agents spécialisés**.
 
 ---
 
-**Exemples d'étapes à réaliser**:
-- Indexer les documents PDFs dans une base vecteur en local
-- Exploiter les fichier excels en constituant des outils accessibles au LLM
-- Réaliser une architecture Agentique adaptée pour fournir des réponses pertinentes
-- Evaluer votre agent en utilisant les Questions/Réponses de référence listées dans `evaluation_question.xlsx`
-- Documenter et soigner votre code pour respecter les conventions PEP8, Flake8, Mypy, Pylint, ou toute bonne pratiques de code
+## 🧠 Architecture du système agentique
 
-**Université Paris Dauphine - IASD 2025-2026**
+Le système est composé de **4 agents principaux**, orchestrés par un agent routeur :
+
+### 🔀 Router Agent
+
+* Analyse la question utilisateur
+* Sélectionne automatiquement l’agent le plus pertinent
+* Garantit une séparation claire des responsabilités
+
+### 📄 PDF Agent (RAG)
+
+* S’appuie sur des **documents PDF internes** (FAQ, catalogue téléphones)
+* Pipeline :
+
+  1. Chargement des PDFs
+  2. Découpage sémantique (chunks)
+  3. Indexation vectorielle FAISS
+  4. Recherche des passages pertinents
+  5. Génération de réponse via LLM
+
+### 📊 Data Agent
+
+* Accède à des **données structurées clients** (CSV / tables)
+* Répond à des questions personnalisées :
+
+  * consommation
+  * factures
+  * roaming
+
+### 🌐 Web Agent
+
+* Gère les questions générales non couvertes par les données internes
+* Fournit des réponses factuelles à portée générale
+
+---
+
+## 🛠️ Choix techniques et justifications
+
+### Modèles
+
+* **LLM** : `mistral-opt` (via Ollama)
+
+  * Modèle local
+  * Bon compromis performance / coût
+  * Pas de dépendance cloud
+
+* **Embeddings** : `nomic-embed-text`
+
+  * Adapté à la recherche sémantique
+  * Performant pour des documents courts à moyens
+
+### Vectorisation
+
+* **FAISS**
+
+  * Rapide
+  * Léger
+  * Idéal pour un projet local
+
+### Framework
+
+* **LangChain**
+
+  * Facilite la structuration agentique
+  * Chaînes RAG explicites et modulaires
+
+### Philosophie de conception
+
+* ❌ Pas d’hallucination
+* ✅ Réponses uniquement basées sur les sources
+* ✅ Préférence donnée à la fiabilité plutôt qu’à l’exhaustivité
+
+---
+
+## 📂 Structure du projet
+
+```
+.
+├── app.py
+├── evaluate.py
+├── README.md
+├── requirements.txt
+├── data/
+│   ├── pdfs/
+│   ├── xlsx/
+│   └── vectorstore/
+├── src/
+│   ├── agents/
+│   │   ├── pdf_agent.py
+│   │   ├── data_agent.py
+│   │   ├── web_agent.py
+│   │   └── router.py
+│   ├── tools/
+│   │   ├── pdf_retriever.py
+│   │   └── data_tools.py
+│   └── config.py
+└── llm_evaluation.csv
+```
+
+---
+
+## ▶️ Installation
+
+### 1️⃣ Cloner le projet
+
+```bash
+git clone <repo_url>
+cd telecomplus-rag
+```
+
+### 2️⃣ Créer l’environnement virtuel
+
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+```
+
+### 3️⃣ Installer les dépendances
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Lancer Ollama
+
+```bash
+ollama run mistral-opt
+```
+
+---
+
+## ▶️ Exécution
+
+### Lancer l’application
+
+```bash
+streamlit run app.py
+```
+
+### Lancer l’évaluation automatique
+
+```bash
+python evaluate.py
+```
+
+---
+
+## 📊 Résultats d’évaluation
+
+L’évaluation est réalisée via un **LLM Judge**, notant chaque réponse sur **3 points**.
+
+### Résultats globaux
+
+* **Score moyen** : **2.24 / 3**
+* **Score total** : **56 / 75**
+
+### Performance par agent
+
+| Agent      | Score moyen  |
+| ---------- | ------------ |
+| PDF Agent  | **2.35 / 3** |
+| Data Agent | 1.86 / 3     |
+| Web Agent  | 3.00 / 3     |
+
+### Distribution des scores
+
+* 3/3 : 48%
+* 2/3 : 32%
+* 1/3 ou moins : 20%
+
+Les erreurs restantes correspondent principalement à des **informations absentes des sources**, choix volontaire afin d’éviter toute hallucination.
+
+---
+
+## ⚠️ Limites et améliorations possibles
+
+* Ajout de métadonnées produit (année de sortie, caméra, autonomie)
+* Enrichissement des règles métier du Data Agent
+* Amélioration du routage hybride (règles + score sémantique)
+
+---
+
+## 🏁 Conclusion
+
+Ce projet démontre la mise en œuvre complète d’un **système agentique RAG**, robuste, explicable et évalué automatiquement, adapté à des cas d’usage réalistes en entreprise.
+

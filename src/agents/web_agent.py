@@ -1,16 +1,24 @@
 from langchain_ollama import OllamaLLM
 
+
 class WebAgent:
     def __init__(self):
-        self.llm = OllamaLLM(model="mistral", temperature=0)
+        print("🌐 Initialisation WebAgent...")
+        self.llm = OllamaLLM(model="mistral-opt", temperature=0)
+        print("✅ WebAgent prêt")
 
-    def answer(self, question: str) -> str:
+    def run(self, question: str) -> str:
         prompt = f"""
-Réponds de manière générale et concise à la question suivante:
+Tu es un assistant généraliste.
+Réponds de manière claire et concise.
 
+Question:
 {question}
+
+Réponse:
 """
         return self.llm.invoke(prompt)
+
 
 
 
