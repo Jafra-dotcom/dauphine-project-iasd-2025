@@ -1,4 +1,6 @@
 from langchain_ollama import OllamaLLM
+from langfuse import observe
+
 
 
 class WebAgent:
@@ -7,15 +9,16 @@ class WebAgent:
         self.llm = OllamaLLM(model="mistral-opt", temperature=0)
         print("✅ WebAgent prêt")
 
+    @observe(name="web_agent")
     def run(self, question: str) -> str:
         prompt = f"""
 Tu es un assistant généraliste.
-Réponds de manière claire et concise.
+Réponds clairement et brièvement.
 
-Question:
+QUESTION:
 {question}
 
-Réponse:
+RÉPONSE:
 """
         return self.llm.invoke(prompt)
 

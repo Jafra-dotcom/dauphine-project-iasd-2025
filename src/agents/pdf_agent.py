@@ -1,7 +1,9 @@
 from langchain_ollama import OllamaLLM
-
 from src.tools.pdf_retriever import PDFRetriever
 from src.config import PDF_DIR, EMBEDDING_MODEL, LLM_MODEL
+from langfuse import observe
+
+from src.monitoring.langfuse_client import langfuse
 
 
 class PDFAgent:
@@ -10,31 +12,27 @@ class PDFAgent:
             pdf_dir=PDF_DIR,
             embedding_model=EMBEDDING_MODEL
         )
+        self.llm = OllamaLLM(model=LLM_MODEL, temperature=0.0)
 
-        self.llm = OllamaLLM(
-            model=LLM_MODEL,
-            temperature=0.0
-        )
-
-    # ------------------------------------------------------------------
-
+    @observe(name="pdf_agent")
     def run(self, question: str) -> str:
         context = self.retriever.retrieve(question)
 
-        # 🔥 BYPASS LLM POUR DONNÉES DÉTERMINISTES
         if (
             context.strip().startswith("iPhone")
-            or "IPHONES DANS VOTRE BUDGET" in context
-            or "moins cher" in context.lower()
             or "€" in context
+            or "budget" in context.lower()
         ):
+            langfuse.create_event(
+                name="pdf_direct_answer",
+                input={"question": question},
+                output={"response": context}
+            )
             return context
 
-        # 🧠 GÉNÉRATION LLM POUR FAQ
         prompt = f"""
 Tu es un assistant client télécom.
-Réponds uniquement à partir du contexte ci-dessous.
-Sois clair, précis et concis.
+Réponds uniquement à partir du contexte.
 
 CONTEXTE :
 {context}
@@ -44,4 +42,12 @@ QUESTION :
 
 RÉPONSE :
 """
-        return self.llm.invoke(prompt).strip()
+        response = self.llm.invoke(prompt).strip()
+
+        langfuse.create_event(
+            name="pdf_llm_answer",
+            input={"question": question},
+            output={"response": response}
+        )
+
+        return response
