@@ -60,8 +60,7 @@ S’appuie sur des documents internes (PDF : FAQ, catalogue téléphones)
 Le projet intègre **Langfuse** afin d’assurer une **traçabilité complète des interactions LLM** au sein du système multi-agents.
 
 ### 🔍 Intégration Langfuse
-- Client centralisé :  
-  `src/monitoring/langfuse_client.py`
+- Client centralisé : `src/monitoring/langfuse_client.py`
 - Instrumentation intégrée dans :
   - `app.py`
   - les agents
@@ -76,7 +75,7 @@ Langfuse permet de tracer :
 - ⏱️ Latence par agent et par requête
 - 🧠 Prompts et outputs
 
-➡️ Ces métriques sont utilisées **uniquement pour le monitoring et l’observabilité**, et non pour l’évaluation.
+➡️ Ces métriques sont utilisées **uniquement pour le monitoring**, et **pas pour l’évaluation**.
 
 ---
 
@@ -136,6 +135,77 @@ Les erreurs restantes correspondent principalement à des **informations absente
 ---
 
 ## 📂 Structure du projet
+├── app.py
+├── evaluate.py
+├── README.md
+├── requirements.txt
+├── data/
+│   ├── pdfs/
+│   ├── xlsx/
+│   └── vectorstore/
+├── src/
+│   ├── agents/
+│   │   ├── pdf_agent.py
+│   │   ├── data_agent.py
+│   │   ├── web_agent.py
+│   │   └── router.py
+│   ├── monitoring/
+│   │   └── langfuse_client.py
+│   ├── tools/
+│   │   ├── pdf_retriever.py
+│   │   └── data_tools.py
+│   └── config.py
+└── llm_evaluation.csv
+
+---
+
+## ▶️ Installation
+
+1️⃣ Cloner le projet  
+git clone <repo_url>  
+cd telecomplus-rag  
+
+2️⃣ Créer l’environnement virtuel  
+python -m venv venv  
+source venv/bin/activate   # Linux / Mac  
+venv\Scripts\activate      # Windows  
+
+3️⃣ Installer les dépendances  
+pip install -r requirements.txt  
+
+4️⃣ Lancer Ollama  
+ollama run mistral-opt  
+
+---
+
+## ▶️ Exécution
+
+Lancer l’application (monitoring Langfuse actif)  
+streamlit run app.py  
+
+Lancer l’évaluation automatique (LLM as a Judge)  
+python evaluate.py  
+
+---
+
+## ⚠️ Limites & améliorations possibles
+
+- Enrichissement des métadonnées produit  
+- Amélioration des règles métier du Data Agent  
+- Routage hybride (règles + score sémantique)  
+- Exploitation avancée du dashboard Langfuse (alerting, analyse de latence)  
+
+---
+
+## 🏁 Conclusion
+
+Ce projet démontre une implémentation complète, observable et évaluée d’un système multi-agents RAG, combinant :
+
+- orchestration intelligente  
+- fiabilité des réponses  
+- monitoring LLM avancé via Langfuse  
+- évaluation automatique indépendante (LLM as a Judge)  
+
 
 
 
