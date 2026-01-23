@@ -120,8 +120,8 @@ class RouterAgent:
         data_keywords = [
             "combien de", "nombre de", "total de", "quantité de",
             "statistique", "moyenne", "minimum", "maximum", "liste",
-            "tous les", "chaque", "par", "groupé", "trié", "filtré",
-            "client", "clients", "abonné", "abonnés", "utilisateur"
+            "tous les", "chaque", "par", "groupé", "trié", "filtré","consommation" ,
+            "client", "clients", "abonné", "abonnés", "utilisateur","historique","minutes"
         ]
         
         matched_data = [kw for kw in data_keywords if kw in q]

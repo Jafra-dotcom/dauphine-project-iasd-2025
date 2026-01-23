@@ -135,10 +135,14 @@ Les erreurs restantes correspondent principalement à des **informations absente
 ---
 
 ## 📂 Structure du projet
+````````````````````````````````````````````````
+````````````````````````````````````````````````
+telecomplus-rag/
 ├── app.py
 ├── evaluate.py
 ├── README.md
 ├── requirements.txt
+├── llm_evaluation.csv
 ├── data/
 │   ├── pdfs/
 │   ├── xlsx/
@@ -155,9 +159,9 @@ Les erreurs restantes correspondent principalement à des **informations absente
 │   │   ├── pdf_retriever.py
 │   │   └── data_tools.py
 │   └── config.py
-└── llm_evaluation.csv
 
----
+```````````````````````````````````````````````````
+```````````````````````````````````````````````````
 
 ## ▶️ Installation
 

@@ -31,8 +31,8 @@ class PDFAgent:
             return context
 
         prompt = f"""
-Tu es un assistant client télécom.
-Réponds uniquement à partir du contexte.
+Tu es un assistant client télécom. Essayes de bien comprendre le contexte et réponds d' une  claire et précise.
+
 
 CONTEXTE :
 {context}

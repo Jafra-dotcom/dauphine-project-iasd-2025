@@ -1,17 +1,25 @@
 id,question,route,response,expected,score
-1,Quels modes de paiement acceptez-vous ?,PDF,"Nous acceptons plusieurs modes de paiement, notamment les cartes de crédit et de débit Visa, Mastercard et American Express, ainsi que les paiements en ligne via PayPal. Vous pouvez également effectue",,3
+1,Quels modes de paiement acceptez-vous ?,PDF,"Nous acceptons plusieurs modes de paiement :
+
+1. Carte de crédit/débit (Visa, Mastercard, American Express)
+2. PayPal
+3. Virement bancaire
+4. Chèque
+5. Espèce en magasin (selon les conditions locales)",,3
 2,Comment puis-je consulter ma facture en ligne ?,PDF,Vous pouvez consulter vos factures en vous connectant à votre espace client sur notre site web ou via l'application mobile. Toutes vos factures sont disponibles dans la section 'Mes factures' pendant ,,3
 3,Puis-je partager mon forfait data avec ma famille ?,PDF,"Oui, nous proposons des forfaits famille qui permettent de partager un pool de données entre plusieurs lignes. Contactez notre service client pour plus d'informations sur nos offres multi-lignes.",,3
 4,Comment activer le roaming international ?,PDF,Le roaming international est généralement activé par défaut. Vous pouvez vérifier son statut dans votre espace client ou en appelant le service client.,,2
 5,Quels sont les tarifs de roaming en Europe ?,PDF,"Dans l'Union Européenne, vous bénéficiez du 'roaming comme à la maison'. Vous pouvez utiliser votre forfait français sans surcoût dans les pays de l'UE, selon les limites de votre contrat.",,3
 6,"J'ai oublié mon mot de passe, que faire ?",PDF,Cliquez sur 'Mot de passe oublié' sur la page de connexion. Vous recevrez un lien de réinitialisation par email ou SMS. Suivez les instructions pour créer un nouveau mot de passe.,,2
-7,Comment configurer mes MMS ?,PDF,"Pour configurer vos MMS (Messages Multimédias), vous devez aller dans les paramètres de votre téléphone, puis accéder à la section ""Messages"". Ensuite, il y aura une option pour ""MMS"" où vous pouvez c",,3
+7,Comment configurer mes MMS ?,PDF,"Pour configurer vos MMS (Messages Multimédias) sur votre appareil Apple, vous pouvez suivre les étapes ci-dessous :
+
+1. Accédez à la page d'accueil de votre téléphone et ouvrez l'application ""Messages",,3
 8,Quel est le prix de l'iPhone 15 en 256GB ?,PDF,"iPhone 15 – 256GB : 1099€
 (Source : Catalogue téléphones)",,3
 9,Quel iPhone a été commercialisé en 2023 ?,PDF,iPhone commercialisés en 2023 : iPhone 15,,0
-10,Quels sont les coloris disponibles pour l'iPhone 16 ?,PDF,Les couleurs disponibles pour l'iPhone 16 n'ont pas été spécifiées dans le contexte fourni. Il est donc impossible de répondre à cette question avec certitude.,,2
+10,Quels sont les coloris disponibles pour l'iPhone 16 ?,PDF,"Les couleurs disponibles pour l'iPhone 16 n'ont pas été spécifiées dans le contexte fourni. Cependant, en référence aux modèles précédents, il est possible que les couleurs soient similaires à celles ",,2
 11,Quel est l'iPhone le moins cher disponible en 128GB ?,PDF,L'iPhone le moins cher disponible est : iPhone 11 – 128GB : 559€,,3
-12,Quelle est la différence d'autonomie entre l'iPhone 13 et l'iPhone 16 ?,PDF,"L'iPhone 16 offre une autonomie de 20 heures de lecture vidéo, tandis que l'iPhone 13 offre une autonomie de 13 à 17 heures de lecture vidéo en fonction du modèle.",,2
+12,Quelle est la différence d'autonomie entre l'iPhone 13 et l'iPhone 16 ?,PDF,"Il n'y a pas d'iPhone 16 à ce jour. L'iPhone le plus récent est l'iPhone 14, et pour l'iPhone 13, la durée d'autonomie de lecture vidéo varie entre 13 heures (pour le modèle standard) et 17 heures (po",,3
 13,Y a-t-il des frais de résiliation si je suis engagé ?,WEB," Oui, il peut y avoir des frais de résiliation lorsque vous êtes engagé. Cependant, cela dépend du contrat que vous avez signé avec votre employeur. Il est donc important de consulter le contrat pour ",,3
 14,Je m'appelle Jean Bertrand. Quelle est ma consommation data ce mois-ci ?,DATA,"📊 CONSOMMATION (2025-11)
 • Data: 3.2 GB
@@ -62,7 +70,7 @@ iPhone 14 – 128GB : 86",,2
 • Prix: 9.99 €
 • Engagement: 12 mois
 📜 Historique: • Essentiel 5GB",,1
-21,"Je veux acheter l'iPhone 16, puis-je avoir une réduction si je rends mon ancien iPhone ?",PDF,"Oui, vous pouvez bénéficier d'une réduction en échangeant votre ancien téléphone. Pour plus de détails sur le processus et les conditions applicables, nous vous recommandons de contacter notre service",,3
+21,"Je veux acheter l'iPhone 16, puis-je avoir une réduction si je rends mon ancien iPhone ?",PDF,"Oui, vous pouvez bénéficier d'une réduction en échangeant votre ancien iPhone lors de votre commande de l'iPhone 16 sur le site web de TelecomPlus (www.telecomplus.fr). Vous trouverez plus d'informati",,3
 22,Quel iPhone avec au moins 48 Mpx de caméra est disponible pour moins de 1200€ en 256GB ?,PDF,"IPHONES DANS VOTRE BUDGET :
 iPhone 11 – 128GB : 559€
 iPhone 11 – 256GB : 659€
@@ -79,5 +87,5 @@ iPhone 13 – 512GB : 11",,1
 • 2025-11: 3.2GB
 • 2025-10: 4.01GB
 • 2025-09: 4.41GB",,2
-24,Quel est le meilleur iPhone pour la photographie ?,PDF,"Le modèle qui offre des performances exceptionnelles en matière de photographie est l'iPhone avec une double caméra 12 Mpx et un capteur principal amélioré, équipé du Photonic Engine. Il permet de cap",,3
-25,Puis-je utiliser mon iPhone à l'étranger sans surcoût ?,PDF,"Oui, vous pouvez utiliser votre iPhone à l'étranger sans surcoût. Toutefois, il est important de vérifier que votre opérateur mobile et le réseau de téléphonie mobile international sont compatibles av",,2
+24,Quel est le meilleur iPhone pour la photographie ?,PDF,"Le meilleur iPhone pour la photographie serait l'iPhone 13 Pro Max ou l'iPhone 13 Pro, car ils disposent de caméras plus avancées comparé aux autres modèles actuels. Ils sont équipés de trois caméras ",,3
+25,Puis-je utiliser mon iPhone à l'étranger sans surcoût ?,PDF,"Oui, vous pouvez utiliser votre iPhone à l'étranger sans surcoût en utilisant le réseau de votre opérateur mobile international ou en activant un plan de données roaming. Il est important de vérifier ",,3
