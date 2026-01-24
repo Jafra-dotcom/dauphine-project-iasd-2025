@@ -65,7 +65,7 @@ def evaluate():
     
     for idx, row in df.iterrows():
         question = row['Question']
-        expected = row.get('Expected Answer', '')
+        expected = row.get('Réponse Attendue', '')
         
         # Router et exécuter
         route = router.route(question)

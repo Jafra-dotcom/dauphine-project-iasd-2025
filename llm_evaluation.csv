@@ -5,22 +5,22 @@ id,question,route,response,expected,score
 2. PayPal
 3. Virement bancaire
 4. Chèque
-5. Espèce en magasin (selon les conditions locales)",,3
-2,Comment puis-je consulter ma facture en ligne ?,PDF,Vous pouvez consulter vos factures en vous connectant à votre espace client sur notre site web ou via l'application mobile. Toutes vos factures sont disponibles dans la section 'Mes factures' pendant ,,3
-3,Puis-je partager mon forfait data avec ma famille ?,PDF,"Oui, nous proposons des forfaits famille qui permettent de partager un pool de données entre plusieurs lignes. Contactez notre service client pour plus d'informations sur nos offres multi-lignes.",,3
-4,Comment activer le roaming international ?,PDF,Le roaming international est généralement activé par défaut. Vous pouvez vérifier son statut dans votre espace client ou en appelant le service client.,,2
-5,Quels sont les tarifs de roaming en Europe ?,PDF,"Dans l'Union Européenne, vous bénéficiez du 'roaming comme à la maison'. Vous pouvez utiliser votre forfait français sans surcoût dans les pays de l'UE, selon les limites de votre contrat.",,3
-6,"J'ai oublié mon mot de passe, que faire ?",PDF,Cliquez sur 'Mot de passe oublié' sur la page de connexion. Vous recevrez un lien de réinitialisation par email ou SMS. Suivez les instructions pour créer un nouveau mot de passe.,,2
+5. Espèce en magasin (selon les conditions locales)","Nous acceptons les paiements par carte bancaire, prélèvement automatique, virement bancaire et PayPal. Le prélèvement automatique garantit de ne jamais manquer une échéance.",2
+2,Comment puis-je consulter ma facture en ligne ?,PDF,Vous pouvez consulter vos factures en vous connectant à votre espace client sur notre site web ou via l'application mobile. Toutes vos factures sont disponibles dans la section 'Mes factures' pendant ,Vous pouvez consulter vos factures en vous connectant à votre espace client sur le site web ou via l'application mobile. Toutes les factures sont disponibles dans la section 'Mes factures' pendant 24 ,3
+3,Puis-je partager mon forfait data avec ma famille ?,PDF,"Oui, nous proposons des forfaits famille qui permettent de partager un pool de données entre plusieurs lignes. Contactez notre service client pour plus d'informations sur nos offres multi-lignes.","Oui, nous proposons des forfaits famille qui permettent de partager un pool de données entre plusieurs lignes. Contactez le service client pour plus d'informations sur les offres multi-lignes.",3
+4,Comment activer le roaming international ?,PDF,Le roaming international est généralement activé par défaut. Vous pouvez vérifier son statut dans votre espace client ou en appelant le service client.,Le roaming international est généralement activé par défaut. Vous pouvez vérifier son statut dans votre espace client ou en appelant le service client. Pensez à vérifier les tarifs avant de voyager.,3
+5,Quels sont les tarifs de roaming en Europe ?,PDF,"Dans l'Union Européenne, vous bénéficiez du 'roaming comme à la maison'. Vous pouvez utiliser votre forfait français sans surcoût dans les pays de l'UE, selon les limites de votre contrat.","Dans l'Union Européenne, vous bénéficiez du 'roaming comme à la maison'. Vous pouvez utiliser votre forfait français sans surcoût dans les pays de l'UE, selon les limites de votre contrat.",3
+6,"J'ai oublié mon mot de passe, que faire ?",PDF,Cliquez sur 'Mot de passe oublié' sur la page de connexion. Vous recevrez un lien de réinitialisation par email ou SMS. Suivez les instructions pour créer un nouveau mot de passe.,Cliquez sur 'Mot de passe oublié' sur la page de connexion. Vous recevrez un lien de réinitialisation par email ou SMS. Suivez les instructions pour créer un nouveau mot de passe.,3
 7,Comment configurer mes MMS ?,PDF,"Pour configurer vos MMS (Messages Multimédias) sur votre appareil Apple, vous pouvez suivre les étapes ci-dessous :
 
-1. Accédez à la page d'accueil de votre téléphone et ouvrez l'application ""Messages",,3
+1. Accédez à la page d'accueil de votre téléphone et ouvrez l'application ""Messages","Les paramètres MMS sont généralement configurés automatiquement. Si ce n'est pas le cas, rendez-vous dans Réglages > Réseau mobile > Noms des points d'accès et ajoutez la configuration disponible sur ",2
 8,Quel est le prix de l'iPhone 15 en 256GB ?,PDF,"iPhone 15 – 256GB : 1099€
-(Source : Catalogue téléphones)",,3
-9,Quel iPhone a été commercialisé en 2023 ?,PDF,iPhone commercialisés en 2023 : iPhone 15,,0
-10,Quels sont les coloris disponibles pour l'iPhone 16 ?,PDF,"Les couleurs disponibles pour l'iPhone 16 n'ont pas été spécifiées dans le contexte fourni. Cependant, en référence aux modèles précédents, il est possible que les couleurs soient similaires à celles ",,2
-11,Quel est l'iPhone le moins cher disponible en 128GB ?,PDF,L'iPhone le moins cher disponible est : iPhone 11 – 128GB : 559€,,3
-12,Quelle est la différence d'autonomie entre l'iPhone 13 et l'iPhone 16 ?,PDF,"Il n'y a pas d'iPhone 16 à ce jour. L'iPhone le plus récent est l'iPhone 14, et pour l'iPhone 13, la durée d'autonomie de lecture vidéo varie entre 13 heures (pour le modèle standard) et 17 heures (po",,3
-13,Y a-t-il des frais de résiliation si je suis engagé ?,WEB," Oui, il peut y avoir des frais de résiliation lorsque vous êtes engagé. Cependant, cela dépend du contrat que vous avez signé avec votre employeur. Il est donc important de consulter le contrat pour ",,3
+(Source : Catalogue téléphones)",L'iPhone 15 en 256GB coûte 1099€.,3
+9,Quel iPhone a été commercialisé en 2023 ?,PDF,iPhone commercialisés en 2023 : iPhone 15,L'iPhone 15 a été commercialisé en 2023.,3
+10,Quels sont les coloris disponibles pour l'iPhone 16 ?,PDF,"Les couleurs disponibles pour l'iPhone 16 n'ont pas été spécifiées dans le contexte fourni. Cependant, en référence aux modèles précédents, il est possible que les couleurs soient similaires à celles ","L'iPhone 16 est disponible en Noir, Blanc, Bleu sarcelle, Rose et Outremer.",2
+11,Quel est l'iPhone le moins cher disponible en 128GB ?,PDF,L'iPhone le moins cher disponible est : iPhone 11 – 128GB : 559€,L'iPhone 11 est le moins cher en 128GB à 559€.,3
+12,Quelle est la différence d'autonomie entre l'iPhone 13 et l'iPhone 16 ?,PDF,"Il n'y a pas d'iPhone 16 à ce jour. L'iPhone le plus récent est l'iPhone 14, et pour l'iPhone 13, la durée d'autonomie de lecture vidéo varie entre 13 heures (pour le modèle standard) et 17 heures (po","L'iPhone 13 offre jusqu'à 19h de lecture vidéo, tandis que l'iPhone 16 offre jusqu'à 22h, soit 3 heures d'autonomie supplémentaires.",3
+13,Y a-t-il des frais de résiliation si je suis engagé ?,WEB," Oui, il peut y avoir des frais de résiliation lorsque vous êtes engagé. Cependant, cela dépend du contrat que vous avez signé avec votre employeur. Il est donc important de consulter le contrat pour ","Si vous êtes encore en période d'engagement, des frais égaux au montant des mensualités restantes peuvent s'appliquer. Si vous êtes hors engagement (après 12 ou 24 mois), la résiliation est gratuite.",2
 14,Je m'appelle Jean Bertrand. Quelle est ma consommation data ce mois-ci ?,DATA,"📊 CONSOMMATION (2025-11)
 • Data: 3.2 GB
 • Minutes: 1087
@@ -28,7 +28,7 @@ id,question,route,response,expected,score
 📜 3 derniers mois:
 • 2025-11: 3.2GB
 • 2025-10: 4.01GB
-• 2025-09: 4.41GB",,3
+• 2025-09: 4.41GB",Vous avez consommé 3.20GB sur votre forfait de 5GB ce mois-ci.,3
 15,Je m'appelle Jean Bertrand. Combien dois-je payer pour ma prochaine facture ?,DATA,"🧾 FACTURES
 • Total: 3
 • Impayées: 2
@@ -36,16 +36,16 @@ id,question,route,response,expected,score
 📋 Dernières factures:
 • 2025-11: 9.99€ (En attente)
 • 2025-10: 9.99€ (Payée)
-• 2025-09: 9.99€ (En retard)",,3
+• 2025-09: 9.99€ (En retard)",Votre prochaine facture s'élève à 9.99€ et est due le 15/12/2025.,1
 16,Je m'appelle Pierre Richard. Ai-je un ticket de support en cours ?,DATA,"🎫 TICKETS OUVERTS (2):
 • #3: Frais de résiliation (Résiliation)
-• #4: Débit très lent (Problème de réseau)",,2
+• #4: Débit très lent (Problème de réseau)","Oui, vous avez 2 tickets en cours : Ticket #3 'Frais de résiliation' (Résiliation), Ticket #4 'Débit très lent' (Problème de réseau).",3
 17,Je m'appelle Jean Bertrand. Combien me coûtera un voyage de 2 semaines aux États-Unis ?,DATA,"👤 CLIENT: Jean Bertrand
 📧 jean.bertrand@email.com
 📱 Forfait: Essentiel 5GB (9.99€, 5GB)
 📊 Dernière conso: 3.2GB (2025-11)
 🧾 Factures: 3, Impayé: 19.98€
-🎫 Tickets: 2, Ouverts: 0",,1
+🎫 Tickets: 2, Ouverts: 0","Hors Europe, nous recommandons un pass international. Selon votre forfait actuel Essentiel 5GB, vous pouvez souscrire à un pass hebdomadaire ou journalier disponible dans votre espace client. Les tari",1
 18,Je m'appelle Alexandre Martin. Puis-je résilier mon abonnement sans frais ?,DATA,"📱 FORFAIT ACTUEL
 • Nom: Confort 20GB
 • Data: 20 GB
@@ -53,7 +53,7 @@ id,question,route,response,expected,score
 • SMS: Illimités
 • Prix: 15.99 €
 • Engagement: 12 mois
-📜 Historique: • Confort 20GB",,1
+📜 Historique: • Confort 20GB",Votre contrat a commencé le 20/02/2024 et vous êtes hors période d'engagement depuis le 14/02/2025. La résiliation est gratuite.,1
 19,Quel iPhone puis-je m'offrir avec mon budget de 1000€ en 256GB ?,PDF,"IPHONES DANS VOTRE BUDGET :
 iPhone 11 – 128GB : 559€
 iPhone 11 – 256GB : 659€
@@ -61,7 +61,7 @@ iPhone 12 – 128GB : 729€
 iPhone 12 – 256GB : 829€
 iPhone 13 – 128GB : 809€
 iPhone 13 – 256GB : 929€
-iPhone 14 – 128GB : 86",,2
+iPhone 14 – 128GB : 86","Avec un budget de 1000€ pour un modèle 256GB, vous pouvez choisir l'iPhone 14 (999€). L'iPhone 15 (1099€) dépasse légèrement votre budget.",2
 20,"Je m'appelle Jean Bertrand. Je pars en Italie 10 jours, dois-je changer de forfait ou prendre une option ?",DATA,"📱 FORFAIT ACTUEL
 • Nom: Essentiel 5GB
 • Data: 5 GB
@@ -69,8 +69,8 @@ iPhone 14 – 128GB : 86",,2
 • SMS: Illimités
 • Prix: 9.99 €
 • Engagement: 12 mois
-📜 Historique: • Essentiel 5GB",,1
-21,"Je veux acheter l'iPhone 16, puis-je avoir une réduction si je rends mon ancien iPhone ?",PDF,"Oui, vous pouvez bénéficier d'une réduction en échangeant votre ancien iPhone lors de votre commande de l'iPhone 16 sur le site web de TelecomPlus (www.telecomplus.fr). Vous trouverez plus d'informati",,3
+📜 Historique: • Essentiel 5GB","Vous avez actuellement le forfait Essentiel 5GB avec 5GB. En Italie (UE), le roaming est inclus sans surcoût selon la politique 'roaming comme à la maison'. Vous pouvez utiliser votre forfait normalem",2
+21,"Je veux acheter l'iPhone 16, puis-je avoir une réduction si je rends mon ancien iPhone ?",PDF,"Oui, vous pouvez bénéficier d'une réduction en échangeant votre ancien iPhone lors de votre commande de l'iPhone 16 sur le site web de TelecomPlus (www.telecomplus.fr). Vous trouverez plus d'informati","L'iPhone 16 en 128GB coûte 1019€. TelecomPlus propose des offres de reprise pour réduire ce prix. Pour connaître la valeur de reprise de votre ancien iPhone et bénéficier d'une réduction, consultez no",2
 22,Quel iPhone avec au moins 48 Mpx de caméra est disponible pour moins de 1200€ en 256GB ?,PDF,"IPHONES DANS VOTRE BUDGET :
 iPhone 11 – 128GB : 559€
 iPhone 11 – 256GB : 659€
@@ -78,7 +78,7 @@ iPhone 12 – 128GB : 729€
 iPhone 12 – 256GB : 829€
 iPhone 13 – 128GB : 809€
 iPhone 13 – 256GB : 929€
-iPhone 13 – 512GB : 11",,1
+iPhone 13 – 512GB : 11","Les iPhone 15 (1099€) et iPhone 16 (1149€) en 256GB ont tous deux une caméra principale de 48 Mpx et sont sous 1200€. L'iPhone 17 a aussi 48 Mpx mais coûte 1299€, dépassant votre budget.",2
 23,"Je m'appelle Jean Bertrand. Si je change pour un forfait avec plus de data, combien cela me coûtera-t-il de plus par mois ?",DATA,"📊 CONSOMMATION (2025-11)
 • Data: 3.2 GB
 • Minutes: 1087
@@ -86,6 +86,6 @@ iPhone 13 – 512GB : 11",,1
 📜 3 derniers mois:
 • 2025-11: 3.2GB
 • 2025-10: 4.01GB
-• 2025-09: 4.41GB",,2
-24,Quel est le meilleur iPhone pour la photographie ?,PDF,"Le meilleur iPhone pour la photographie serait l'iPhone 13 Pro Max ou l'iPhone 13 Pro, car ils disposent de caméras plus avancées comparé aux autres modèles actuels. Ils sont équipés de trois caméras ",,3
-25,Puis-je utiliser mon iPhone à l'étranger sans surcoût ?,PDF,"Oui, vous pouvez utiliser votre iPhone à l'étranger sans surcoût en utilisant le réseau de votre opérateur mobile international ou en activant un plan de données roaming. Il est important de vérifier ",,3
+• 2025-09: 4.41GB","Vous avez actuellement le forfait Essentiel 5GB à 9.99€/mois avec 5GB. Le forfait supérieur est Confort 20GB à 15.99€/mois avec 20GB, soit 6.00€ de plus par mois. Pour changer de forfait, vous pouvez ",0
+24,Quel est le meilleur iPhone pour la photographie ?,PDF,"Le meilleur iPhone pour la photographie serait l'iPhone 13 Pro Max ou l'iPhone 13 Pro, car ils disposent de caméras plus avancées comparé aux autres modèles actuels. Ils sont équipés de trois caméras ","L'iPhone 17 offre le système photo le plus avancé avec triple caméra 48 Mpx, téléobjectif périscopique 5x et capteur LiDAR. L'iPhone 16 est également excellent avec son système Fusion 48 Mpx. Le choix",2
+25,Puis-je utiliser mon iPhone à l'étranger sans surcoût ?,PDF,"Oui, vous pouvez utiliser votre iPhone à l'étranger sans surcoût en utilisant le réseau de votre opérateur mobile international ou en activant un plan de données roaming. Il est important de vérifier ","Cela dépend de votre destination. Dans l'Union Européenne, vous bénéficiez du roaming sans surcoût ('roaming comme à la maison'). Hors Europe, des frais s'appliquent, et nous recommandons de souscrire",2
